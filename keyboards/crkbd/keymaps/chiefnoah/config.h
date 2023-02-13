@@ -30,6 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define TAPPING_FORCE_HOLD
 // #define TAPPING_TERM 100
 
+# define I2C_DRIVER I2CD1
+
 // Split keyboard sync config#define SPLIT_TRANSPORT_MIRROR
 #define SPLIT_LAYER_STATE_ENABLE
 #define SPLIT_LED_STATE_ENABLE
