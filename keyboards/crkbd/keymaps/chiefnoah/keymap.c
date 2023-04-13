@@ -17,33 +17,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // Stuff to fix RP2040 with OLED
 
-// Use the right I2C interface
-#undef RP_I2C_USE_I2C0
-#define RP_I2C_USE_I2C0 TRUE
-
-#undef RP_I2C_USE_I2C1
-#define RP_I2C_USE_I2C1 FALSE
-
-
-#define WS2812_PIO_USE_PIO1
-
-#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET              // Activates the double-tap behavior
-#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP25     // Specify a optional status led by GPIO number which blinks when entering the bootloader
-
-#ifdef RGBLIGHT_ENABLE
-#    define RGBLED_NUM 54 // Number of LEDs
-#    define RGBLED_SPLIT \
-        { 27, 27 }
-#    define RGBLIGHT_SPLIT
-#endif
-
-#ifdef RGB_MATRIX_ENABLE
-#    define RGBLED_NUM 54 // Number of LEDs
-#    define RGB_MATRIX_LED_COUNT RGBLED_NUM
-#    define RGB_MATRIX_SPLIT \
-        { 27, 27 }
-#    define SPLIT_TRANSPORT_MIRROR
-#endif
 
 #ifdef OLED_ENABLE
 

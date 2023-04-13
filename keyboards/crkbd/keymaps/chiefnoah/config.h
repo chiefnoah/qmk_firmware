@@ -40,6 +40,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Don't let my OLEDs burn in
 #define OLED_FADE_OUT
+#define SPLIT_OLED_ENABLE
+
+#define WS2812_PIO_USE_PIO1
+
+#ifdef RGBLIGHT_ENABLE
+#    define RGBLED_NUM 54 // Number of LEDs
+#    define RGBLED_SPLIT \
+        { 27, 27 }
+#    define RGBLIGHT_SPLIT
+#endif
+
+#ifdef RGB_MATRIX_ENABLE
+#    define RGBLED_NUM 54 // Number of LEDs
+#    define RGB_MATRIX_LED_COUNT RGBLED_NUM
+#    define RGB_MATRIX_SPLIT \
+        { 27, 27 }
+#    define SPLIT_TRANSPORT_MIRROR
+#endif
 
 #ifdef RGBLIGHT_ENABLE
 #    define RGBLIGHT_EFFECT_BREATHING
