@@ -1,0 +1,13 @@
+RGBLIGHT_ENABLE = no    # Disable WS2812 RGB underlight.
+OLED_ENABLE     = yes
+LTO_ENABLE      = yes
+WPM_ENABLE       = yes
+BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
+MOUSEKEY_ENABLE  = no       # Mouse keys
+EXTRAKEY_ENABLE  = yes       # Audio control and System control
+CONSOLE_ENABLE   = no         # Console for debug
+COMMAND_ENABLE   = no         # Commands for debug and configuration
+NKRO_ENABLE      = yes           # Enable N-Key Rollover
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
+RGBLIGHT_ENABLE  = no        # Enable keyboard RGB underglow
+CONVERT_TO = blok
